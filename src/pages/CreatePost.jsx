@@ -19,7 +19,7 @@ const CreatePost = () => {
         if (form.prompt) {
             try {
                 setGeneratingImg(true);
-                const response = await fetch('https://eightxl.onrender.com/api/v1/xl', {
+                const response = await fetch('https://raspberry-donkey-tutu.cyclic.app/api/v1/xl', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ const CreatePost = () => {
         if (form.prompt && form.photo) {
             setLoading(true);
             try {
-                const response = await fetch('https://eightxl.onrender.com/api/v1/post', {
+                const response = await fetch('https://raspberry-donkey-tutu.cyclic.app/api/v1/post', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
